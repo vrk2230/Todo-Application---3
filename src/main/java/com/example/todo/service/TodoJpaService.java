@@ -42,7 +42,7 @@ public class TodoJpaService implements TodoRepository {
     }
 
     @Override
-    public Todo updaTodo(int id, Todo todo) {
+    public Todo updateTodo(int id, Todo todo) {
         try {
             Todo updatedTodo = todoJpaRepository.findById(id).get();
             if (updatedTodo.getTodo() != null) {

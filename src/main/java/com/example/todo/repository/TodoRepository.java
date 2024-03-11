@@ -14,7 +14,7 @@ public interface TodoRepository {
 
     Todo addTodo(Todo todo);
 
-    Todo updaTodo(int id, Todo todo);
+    Todo updateTodo(int id, Todo todo);
 
     void deleteTodo(int id);
 }

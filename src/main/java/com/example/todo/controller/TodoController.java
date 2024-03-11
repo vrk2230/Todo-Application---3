@@ -31,7 +31,7 @@ public class TodoController {
 
     @PutMapping("/todos/{id}")
     public Todo updateTodo(@PathVariable("id") int id, @RequestBody Todo todo) {
-        return todoJpaService.updaTodo(id, todo);
+        return todoJpaService.updateTodo(id, todo);
     }
 
     @DeleteMapping("/todos/{id}")
